@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Happy Birthday, Shivani 💗</title>
+  <meta name="description" content="A little surprise made just for Shivani.">
+  <meta name="theme-color" content="#ffd6e4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div class="floaters" id="floaters" aria-hidden="true"></div>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <!-- ================= OPENING ENVELOPE ================= -->
+  <section id="welcome" class="welcome" aria-labelledby="welcomeTitle">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+    <div class="stars" data-stars="26" aria-hidden="true"></div>
+    <div class="welcome-inner">
+      <button class="env" id="envBtn" type="button" aria-label="Open the envelope">
+        <span class="env-back"></span>
+        <span class="env-letter"><i>For</i><b class="script">Shivani</b><em>💗</em></span>
+        <span class="env-front"></span>
+        <span class="env-flap"></span>
+        <span class="env-seal"><span>❤</span></span>
+      </button>
+      <p class="welcome-small">Hey <span class="script">Shivani</span>,</p>
+      <h1 id="welcomeTitle">someone has made something special just for you <span aria-hidden="true">💌</span></h1>
+      <p class="welcome-intro">A few photos, a few words, and a lot of smiles, all wrapped up for your birthday.</p>
+      <button id="openBtn" class="btn btn-gold" type="button">Open Your Surprise ❤️</button>
+    </div>
+  </section>
+
+  <!-- ================= MAIN SITE ================= -->
+  <main id="site" class="site hidden">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="lights" id="lights" aria-hidden="true"></div>
+      <div class="hero-grid">
+        <div class="hero-photo">
+          <span class="deco d1" aria-hidden="true">🌹</span>
+          <span class="deco d2" aria-hidden="true">🌸</span>
+          <span class="deco d3" aria-hidden="true">✨</span>
+          <span class="deco d4" aria-hidden="true">⭐</span>
+          <span class="deco d5" aria-hidden="true">💗</span>
+          <span class="deco d6" aria-hidden="true">🌷</span>
+          <div class="hero-ring" aria-hidden="true"></div>
+          <div class="hero-frame" id="tilt">
+            <img src="photos/photo3.JPG" alt="Shivani smiling, holding her birthday cake at a cafe" loading="eager">
+          </div>
+        </div>
+        <div class="hero-text">
+          <p class="eyebrow"><span>✦ 11 October 2026 ✦</span></p>
+          <h2>
+            <span class="h-small">Happy Birthday,</span>
+            <span class="script gold h-name">Shivani!</span>
+            <span class="h-emoji" aria-hidden="true">🎂❤️</span>
+          </h2>
+          <p class="hero-sub" id="typed" data-text="To the girl who makes my days a little brighter." aria-label="To the girl who makes my days a little brighter."></p>
+          <a href="#gallery" class="btn btn-gold" id="toGallery">See Your Memories 📸</a>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#marquee" aria-label="Scroll down">↓</a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" id="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>✦ Happy Birthday Shivani ✦ 11 October ✦ Make a wish ✦ Happy Birthday Shivani ✦ 11 October ✦ Make a wish </span>
+        <span>✦ Happy Birthday Shivani ✦ 11 October ✦ Make a wish ✦ Happy Birthday Shivani ✦ 11 October ✦ Make a wish </span>
+      </div>
+    </div>
+
+    <!-- STORY / GALLERY -->
+    <section class="story" id="gallery">
+      <p class="kicker reveal">A little story, told in photos</p>
+      <h2 class="section-title reveal">Moments of <span class="script gold">You</span></h2>
+      <p class="section-sub reveal">Tap any photo to see it bigger.</p>
+
+      <article class="chapter">
+        <div class="ch-photo reveal-left" style="--tilt:-2.5deg">
+          <span class="ch-num" aria-hidden="true">01</span>
+          <button class="photo-btn" type="button" aria-label="Open photo: Simply, wonderfully you">
+            <img src="photos/photo1.JPG" style="--pos:50% 40%" alt="Shivani in a saree, softly smiling, with little hearts above her hair" loading="lazy">
+          </button>
+        </div>
+        <div class="ch-text reveal-right">
+          <p class="ch-label">Chapter one</p>
+          <h3>Grace</h3>
+          <p class="ch-cap">Simply, wonderfully you.</p>
+        </div>
+      </article>
+
+      <article class="chapter flip-row">
+        <div class="ch-photo reveal-right" style="--tilt:2.5deg">
+          <span class="ch-num" aria-hidden="true">02</span>
+          <button class="photo-btn" type="button" aria-label="Open photo: Pretty as a flower">
+            <img src="photos/photo2.JPG" style="--pos:50% 28%" alt="Shivani in a selfie with little yellow flowers in her hair" loading="lazy">
+          </button>
+        </div>
+        <div class="ch-text reveal-left">
+          <p class="ch-label">Chapter two</p>
+          <h3>Sunshine</h3>
+          <p class="ch-cap">Pretty as a flower, bright as the sun 🌼</p>
+        </div>
+      </article>
+
+      <article class="chapter">
+        <div class="ch-photo reveal-left" style="--tilt:-2deg">
+          <span class="ch-num" aria-hidden="true">03</span>
+          <button class="photo-btn" type="button" aria-label="Open photo: Your smile is my favourite view">
+            <img src="photos/photo3.JPG" style="--pos:50% 40%" alt="Shivani with a birthday cake in front of a Happy Birthday banner" loading="lazy">
+          </button>
+        </div>
+        <div class="ch-text reveal-right">
+          <p class="ch-label">Chapter three</p>
+          <h3>The Birthday Girl</h3>
+          <p class="ch-cap">Your smile is my favourite view.</p>
+        </div>
+      </article>
+
+      <article class="chapter flip-row">
+        <div class="ch-photo reveal-right" style="--tilt:2deg">
+          <span class="ch-num" aria-hidden="true">04</span>
+          <button class="photo-btn" type="button" aria-label="Open photo: Cute, playful, always you">
+            <img src="photos/photo4.JPG" style="--pos:50% 60%" alt="Shivani taking a playful selfie" loading="lazy">
+          </button>
+        </div>
+        <div class="ch-text reveal-left">
+          <p class="ch-label">Chapter four</p>
+          <h3>Playful</h3>
+          <p class="ch-cap">Cute, playful, and always you.</p>
+        </div>
+      </article>
+
+      <article class="chapter">
+        <div class="ch-photo reveal-left" style="--tilt:-2.5deg">
+          <span class="ch-num" aria-hidden="true">05</span>
+          <button class="photo-btn" type="button" aria-label="Open photo: Even little moments feel special">
+            <img src="photos/photo5.PNG" style="--pos:50% 30%" alt="Shivani smiling as she looks down at her hand" loading="lazy">
+          </button>
+        </div>
+        <div class="ch-text reveal-right">
+          <p class="ch-label">Chapter five</p>
+          <h3>Little Moments</h3>
+          <p class="ch-cap">Even the quiet little moments feel special with you.</p>
+        </div>
+      </article>
+
+      <article class="chapter flip-row">
+        <div class="ch-photo reveal-right" style="--tilt:2.5deg">
+          <span class="ch-num" aria-hidden="true">06</span>
+          <button class="photo-btn" type="button" aria-label="Open photo: Make a wish">
+            <img src="photos/photo6.JPG" style="--pos:50% 30%" alt="Shivani in a white top, getting ready to cut her cake" loading="lazy">
+          </button>
+        </div>
+        <div class="ch-text reveal-left">
+          <p class="ch-label">Chapter six</p>
+          <h3>Make a Wish</h3>
+          <p class="ch-cap">Cake time, my favourite girl 🎂</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- LETTER (dark wine) -->
+    <section class="night letter-sec" id="letter">
+      <div class="stars" data-stars="40" aria-hidden="true"></div>
+      <div class="letter-wrap">
+        <p class="kicker light reveal">Written just for you</p>
+        <div class="letter-paper reveal">
+          <span class="ribbon" aria-hidden="true">💗</span>
+          <h3 class="script">Dear Shivani,</h3>
+          <p>Happy Birthday, my love. I wanted to make you something that feels like you: soft, warm and full of smiles.</p>
+          <p>Every day with you has felt special in its own quiet way. Your smile, your little expressions, and the way you make ordinary moments feel lighter all mean a lot to me.</p>
+          <p>We're at the beginning of our story, and I'm happy to take it one lovely day at a time. I hope today brings you cake, laughter, and everything that makes you happy.</p>
+          <p class="sign">With all my love,<br><span class="script big">Baby</span> 💗</p>
+        </div>
+      </div>
+
+      <div class="reasons">
+        <h2 class="section-title light reveal">Little Things I <span class="script gold-light">Adore</span></h2>
+        <div class="reason-grid">
+          <div class="glass reveal"><span>😊</span><p>Your smile, which can fix a whole bad day.</p></div>
+          <div class="glass reveal"><span>💬</span><p>The way you talk, so natural and so you.</p></div>
+          <div class="glass reveal"><span>🌷</span><p>Your gentle, caring heart.</p></div>
+          <div class="glass reveal"><span>✨</span><p>How easy it is to be happy around you.</p></div>
+        </div>
+      </div>
+
+      <!-- WISH CAKE -->
+      <div class="wish">
+        <h2 class="section-title light reveal">Make a <span class="script gold-light">Wish</span></h2>
+        <p class="section-sub light reveal">Tap the candle, close your eyes, and wish for something lovely.</p>
+        <div class="cake-stage">
+          <div class="cake-glow" id="cakeGlow" aria-hidden="true"></div>
+          <button id="candleBtn" class="cake" type="button" aria-label="Blow out the candle and make a wish">
+            <span class="flame" id="flame"></span>
+            <span class="candle"></span>
+            <span class="cake-top"></span>
+            <span class="cake-mid"></span>
+            <span class="cake-bot"></span>
+          </button>
+        </div>
+        <p id="wishMsg" class="wish-msg" aria-live="polite">🕯️ Tap the candle</p>
+      </div>
+    </section>
+
+    <!-- FINAL SURPRISE -->
+    <section class="finale">
+      <p class="kicker reveal">One last thing</p>
+      <h2 class="section-title reveal">A little <span class="script gold">surprise</span></h2>
+      <p class="section-sub reveal">Tap the gift when you're ready.</p>
+      <button id="giftBtn" class="gift reveal" type="button" aria-label="Open your last surprise">
+        <span class="gift-lid"></span><span class="gift-box"></span><span class="gift-ribbon"></span><span class="gift-bow">🎀</span>
+      </button>
+    </section>
+
+    <footer class="footer">
+      <p class="script big gold">Happy Birthday, Shivani 💗</p>
+      <p>Made with love, by Baby.</p>
+      <button id="replayBtn" class="btn btn-ghost" type="button">Celebrate again 🎉</button>
+    </footer>
+  </main>
+
+  <!-- GIFT OVERLAY -->
+  <div id="giftOverlay" class="gift-overlay" role="dialog" aria-modal="true" aria-labelledby="giftTitle" hidden>
+    <div class="gift-card">
+      <button id="giftClose" class="gift-close" type="button" aria-label="Close message">✕</button>
+      <p class="script gift-title" id="giftTitle">Happy Birthday, Shivani</p>
+      <p>Thank you for being you, and for every smile you've given me. I'm really happy to have you in my life, and I can't wait to make many more beautiful memories with you.</p>
+      <p class="script big gold">Yours, Baby 💗</p>
+    </div>
+  </div>
+
+  <!-- Music control -->
+  <button id="musicBtn" class="music-btn hidden" type="button" aria-label="Pause music" aria-pressed="true">
+    <span id="musicIcon" aria-hidden="true">🎵</span>
+  </button>
+  <div id="musicNote" class="music-note" role="status" aria-live="polite"></div>
+  <audio id="bgm" loop preload="auto" src="assets/birthday-song.mp3"></audio>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button id="lbClose" class="lb-close" type="button" aria-label="Close photo">✕</button>
+    <button id="lbPrev" class="lb-nav lb-prev" type="button" aria-label="Previous photo">‹</button>
+    <figure class="lb-fig">
+      <img id="lbImg" src="" alt="">
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button id="lbNext" class="lb-nav lb-next" type="button" aria-label="Next photo">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
